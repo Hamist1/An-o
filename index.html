@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desculpa mesmo!</title>
+  <style>
+    :root {
+      --roxo-escuro: #6a0dad;
+      --roxo-claro: #9b59b6;
+      --roxo-gradient: linear-gradient(135deg, var(--roxo-escuro), var(--roxo-claro));
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      background: var(--roxo-gradient);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    
+    .caixa {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: clamp(20px, 5vw, 40px);
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      width: min(95%, 600px);
+      margin: 20px auto;
+    }
+    
+    h1 {
+      color: var(--roxo-escuro);
+      font-size: clamp(24px, 5vw, 28px);
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: clamp(16px, 3vw, 18px);
+      margin: 15px 0;
+      color: #333;
+    }
+    
+    .emoji {
+      font-size: clamp(40px, 8vw, 60px);
+      margin-bottom: 15px;
+      color: var(--roxo-claro);
+    }
+    
+    .botao {
+      margin-top: 25px;
+      padding: clamp(10px, 3vw, 12px) clamp(20px, 4vw, 30px);
+      font-size: clamp(16px, 3vw, 18px);
+      background: var(--roxo-gradient);
+      color: white;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(155, 89, 182, 0.4);
+    }
+    
+    .botao:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(155, 89, 182, 0.6);
+    }
+    
+    @media (max-width: 480px) {
+      body {
+        padding: 10px;
+      }
+      
+      .caixa {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="caixa">
+    <div class="emoji">🗺️</div>
+    <h1>Site de ontem</h1>
+    <p>Desculpa por ter mandado aquele site de pegar a sua localização, repensei nas minhas atitudes e vi que passei dos limites.
+        Juro que minha intenção não era te seguir tipo GPS humano... foi só fogo no cu.
+        Sinto que você também não gostou, então tinha que me redimir de alguma forma
+        Prometo que vou tentar não fazer mais coisas desse tipo</p>
+    <a href="carro.html" class="botao">Tá perdoada!</a>
+  </div>
+</body>
+</html>
